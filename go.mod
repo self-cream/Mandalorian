@@ -9,6 +9,8 @@ module github.com/NJUPT-ISL/Mandalorian
 go 1.15
 
 require (
+	github.com/NJUPT-ISL/NodeSimulator v0.0.0-20201209024726-32eb1fd9338a
+	github.com/NJUPT-ISL/SCV v0.0.0-20200908005541-d990930d5755
 	github.com/google/go-cmp v0.5.2
 	github.com/prometheus/client_golang v1.7.1
 	github.com/prometheus/client_model v0.2.0
@@ -27,6 +29,7 @@ require (
 	k8s.io/kube-scheduler v0.0.0
 	k8s.io/kubernetes v1.20.0
 	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
+	sigs.k8s.io/controller-runtime v0.4.0
 	sigs.k8s.io/yaml v1.2.0
 )
 
@@ -421,4 +424,6 @@ replace (
 	sigs.k8s.io/kustomize => sigs.k8s.io/kustomize v2.0.3+incompatible
 	sigs.k8s.io/structured-merge-diff/v4 => sigs.k8s.io/structured-merge-diff/v4 v4.0.2
 	sigs.k8s.io/yaml => sigs.k8s.io/yaml v1.2.0
+	github.com/NJUPT-ISL/NodeSimulator => github.com/self-cream/NodeSimulator v0.0.0-20201213131646-ec5b3a6f941d
+	github.com/NJUPT-ISL/SCV => github.com/self-cream/SCV v0.0.0-20201213061001-6c337bbac7a5
 )
