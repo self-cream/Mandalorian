@@ -26,16 +26,6 @@ import (
 	"testing"
 	"time"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/api/resource"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/client-go/informers"
-	clientsetfake "k8s.io/client-go/kubernetes/fake"
-	pvutil "k8s.io/kubernetes/pkg/controller/volume/persistentvolume/util"
 	schedulerapi "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/defaultbinder"
@@ -49,6 +39,16 @@ import (
 	internalqueue "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
 	st "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/testing"
 	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/api/resource"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/apimachinery/pkg/types"
+	"k8s.io/apimachinery/pkg/util/sets"
+	"k8s.io/apimachinery/pkg/util/wait"
+	"k8s.io/client-go/informers"
+	clientsetfake "k8s.io/client-go/kubernetes/fake"
+	pvutil "k8s.io/kubernetes/pkg/controller/volume/persistentvolume/util"
 )
 
 var (

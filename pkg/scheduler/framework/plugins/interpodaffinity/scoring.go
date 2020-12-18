@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	v1 "k8s.io/api/core/v1"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
 	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
+	v1 "k8s.io/api/core/v1"
 )
 
 // preScoreStateKey is the key in CycleState to InterPodAffinity pre-computed data for Scoring.
@@ -280,4 +280,3 @@ func (pl *InterPodAffinity) NormalizeScore(ctx context.Context, cycleState *fram
 func (pl *InterPodAffinity) ScoreExtensions() framework.ScoreExtensions {
 	return pl
 }
-

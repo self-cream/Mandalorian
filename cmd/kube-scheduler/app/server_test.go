@@ -27,10 +27,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/google/go-cmp/cmp"
 	"github.com/spf13/pflag"
 	"k8s.io/kubernetes/cmd/kube-scheduler/app/options"
-	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 func TestSetup(t *testing.T) {

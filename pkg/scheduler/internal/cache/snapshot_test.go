@@ -20,10 +20,10 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 const mb int64 = 1024 * 1024

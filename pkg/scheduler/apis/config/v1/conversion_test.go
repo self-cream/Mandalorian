@@ -20,10 +20,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/google/go-cmp/cmp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	v1 "k8s.io/kube-scheduler/config/v1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 func TestV1LegacyExtenderToConfigExtenderConversion(t *testing.T) {

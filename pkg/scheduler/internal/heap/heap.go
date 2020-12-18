@@ -24,8 +24,8 @@ import (
 	"container/heap"
 	"fmt"
 
-	"k8s.io/client-go/tools/cache"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
+	"k8s.io/client-go/tools/cache"
 )
 
 // KeyFunc is a function type to get the key from an object.

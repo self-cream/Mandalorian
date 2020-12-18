@@ -17,9 +17,9 @@ limitations under the License.
 package v1
 
 import (
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"k8s.io/apimachinery/pkg/conversion"
 	v1 "k8s.io/kube-scheduler/config/v1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 func Convert_v1_LegacyExtender_To_config_Extender(in *v1.LegacyExtender, out *config.Extender, s conversion.Scope) error {

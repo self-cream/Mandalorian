@@ -19,12 +19,6 @@ package plugins
 import (
 	"testing"
 
-	"github.com/google/go-cmp/cmp"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apiserver/pkg/util/feature"
-	"k8s.io/component-base/featuregate"
-	featuregatetesting "k8s.io/component-base/featuregate/testing"
-	"k8s.io/kubernetes/pkg/features"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/imagelocality"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/interpodaffinity"
@@ -35,6 +29,12 @@ import (
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/podtopologyspread"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/selectorspread"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/tainttoleration"
+	"github.com/google/go-cmp/cmp"
+	"k8s.io/apimachinery/pkg/util/sets"
+	"k8s.io/apiserver/pkg/util/feature"
+	"k8s.io/component-base/featuregate"
+	featuregatetesting "k8s.io/component-base/featuregate/testing"
+	"k8s.io/kubernetes/pkg/features"
 )
 
 func TestRegisterConfigProducers(t *testing.T) {

@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"k8s.io/apimachinery/pkg/conversion"
 	"k8s.io/apimachinery/pkg/runtime"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/kube-scheduler/config/v1beta1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"k8s.io/utils/pointer"
 )
 

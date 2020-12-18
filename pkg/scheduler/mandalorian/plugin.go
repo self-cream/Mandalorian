@@ -2,18 +2,17 @@ package mandalorian
 
 import (
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	"k8s.io/apimachinery/pkg/runtime"
 	scv "github.com/NJUPT-ISL/SCV/api/v1"
+	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
 const (
-	Name = "Mandalorian"
+	Name        = "Mandalorian"
 	ScoreWeight = 2
 )
-
 
 var _ framework.FilterPlugin = &Mandalorian{}
 var _ framework.ScorePlugin = &Mandalorian{}
@@ -31,7 +30,7 @@ func (m *Mandalorian) Name() string {
 
 func New(_ runtime.Object, h framework.Handle) (framework.Plugin, error) {
 	return &Mandalorian{
-		handle: h,
+		handle:    h,
 		scvClient: NewScvClient(),
 	}, nil
 }

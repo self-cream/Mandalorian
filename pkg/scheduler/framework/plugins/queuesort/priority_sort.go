@@ -17,9 +17,9 @@ limitations under the License.
 package queuesort
 
 import (
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"k8s.io/apimachinery/pkg/runtime"
 	corev1helpers "k8s.io/component-helpers/scheduling/corev1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // Name is the name of the plugin used in the plugin registry and configurations.

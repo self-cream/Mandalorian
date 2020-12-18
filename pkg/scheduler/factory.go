@@ -22,16 +22,6 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/google/go-cmp/cmp"
-	v1 "k8s.io/api/core/v1"
-	apierrors "k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/client-go/informers"
-	clientset "k8s.io/client-go/kubernetes"
-	corelisters "k8s.io/client-go/listers/core/v1"
-	"k8s.io/klog/v2"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/algorithmprovider"
 	schedulerapi "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/validation"
@@ -47,6 +37,16 @@ import (
 	cachedebugger "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache/debugger"
 	internalqueue "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/profile"
+	"github.com/google/go-cmp/cmp"
+	v1 "k8s.io/api/core/v1"
+	apierrors "k8s.io/apimachinery/pkg/api/errors"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/apimachinery/pkg/util/sets"
+	"k8s.io/client-go/informers"
+	clientset "k8s.io/client-go/kubernetes"
+	corelisters "k8s.io/client-go/listers/core/v1"
+	"k8s.io/klog/v2"
 )
 
 // Binder knows how to write a binding.

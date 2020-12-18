@@ -20,10 +20,6 @@ import (
 	"fmt"
 	"sort"
 
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apiserver/pkg/util/feature"
-	"k8s.io/klog/v2"
-	"k8s.io/kubernetes/pkg/features"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/imagelocality"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/interpodaffinity"
@@ -42,6 +38,10 @@ import (
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/volumebinding"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/volumerestrictions"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/volumezone"
+	"k8s.io/apimachinery/pkg/util/sets"
+	"k8s.io/apiserver/pkg/util/feature"
+	"k8s.io/klog/v2"
+	"k8s.io/kubernetes/pkg/features"
 )
 
 const (

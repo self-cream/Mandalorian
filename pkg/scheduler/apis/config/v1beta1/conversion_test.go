@@ -19,10 +19,10 @@ package v1beta1
 import (
 	"testing"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/google/go-cmp/cmp"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/kube-scheduler/config/v1beta1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"k8s.io/utils/pointer"
 )
 

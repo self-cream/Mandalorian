@@ -24,9 +24,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/diff"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 func newPod(host string, hostPortInfos ...string) *v1.Pod {

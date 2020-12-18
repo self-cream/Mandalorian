@@ -23,6 +23,7 @@ import (
 	"sync/atomic"
 	"time"
 
+	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -32,7 +33,6 @@ import (
 	"k8s.io/klog/v2"
 	v1helper "k8s.io/kubernetes/pkg/apis/core/v1/helper"
 	"k8s.io/kubernetes/pkg/features"
-	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 )
 
 var generation int64

@@ -23,9 +23,9 @@ import (
 
 	"github.com/spf13/pflag"
 
-	apiserveroptions "k8s.io/apiserver/pkg/server/options"
 	schedulerappconfig "github.com/NJUPT-ISL/Mandalorian/cmd/kube-scheduler/app/config"
 	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	apiserveroptions "k8s.io/apiserver/pkg/server/options"
 )
 
 // CombinedInsecureServingOptions sets up to two insecure listeners for healthz and metrics. The flags

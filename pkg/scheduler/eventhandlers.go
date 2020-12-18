@@ -22,6 +22,8 @@ import (
 
 	"k8s.io/klog/v2"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/profile"
 	v1 "k8s.io/api/core/v1"
 	storagev1 "k8s.io/api/storage/v1"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
@@ -29,8 +31,6 @@ import (
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/kubernetes/pkg/features"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/profile"
 )
 
 func (sched *Scheduler) onPvAdd(obj interface{}) {

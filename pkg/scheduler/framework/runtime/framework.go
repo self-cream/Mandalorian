@@ -23,6 +23,11 @@ import (
 	"sort"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/scheme"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
@@ -32,11 +37,6 @@ import (
 	"k8s.io/client-go/tools/events"
 	"k8s.io/klog/v2"
 	"k8s.io/kube-scheduler/config/v1beta1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/scheme"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
 )
 
 const (

@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	corev1helpers "k8s.io/component-helpers/scheduling/corev1"
 	extenderv1 "k8s.io/kube-scheduler/extender/v1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 )
 
 // FitPredicate is a function type which is used in fake extender.

@@ -22,13 +22,6 @@ import (
 	"testing"
 	"time"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/api/resource"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/client-go/informers"
-	clientsetfake "k8s.io/client-go/kubernetes/fake"
 	schedulerapi "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/defaultbinder"
@@ -37,6 +30,13 @@ import (
 	internalcache "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
 	internalqueue "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
 	st "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/testing"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/api/resource"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/util/sets"
+	"k8s.io/apimachinery/pkg/util/wait"
+	"k8s.io/client-go/informers"
+	clientsetfake "k8s.io/client-go/kubernetes/fake"
 )
 
 func TestGenericSchedulerWithExtenders(t *testing.T) {

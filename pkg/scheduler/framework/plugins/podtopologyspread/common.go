@@ -17,11 +17,11 @@ limitations under the License.
 package podtopologyspread
 
 import (
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/helper"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/helper"
 )
 
 type topologyPair struct {

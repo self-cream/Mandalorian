@@ -21,11 +21,11 @@ import (
 	"reflect"
 	"testing"
 
-	v1 "k8s.io/api/core/v1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
+	v1 "k8s.io/api/core/v1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 func nodeWithTaints(nodeName string, taints []v1.Taint) *v1.Node {

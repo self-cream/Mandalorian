@@ -19,9 +19,9 @@ package runtime
 import (
 	"time"
 
-	k8smetrics "k8s.io/component-base/metrics"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
+	k8smetrics "k8s.io/component-base/metrics"
 )
 
 // frameworkMetric is the data structure passed in the buffer channel between the main framework thread

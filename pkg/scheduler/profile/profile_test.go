@@ -22,12 +22,12 @@ import (
 	"strings"
 	"testing"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/client-go/tools/events"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/client-go/tools/events"
 )
 
 var fakeRegistry = frameworkruntime.Registry{

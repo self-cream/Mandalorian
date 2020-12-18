@@ -19,10 +19,14 @@ package testing
 import (
 	"testing"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/profile"
 	"github.com/google/go-cmp/cmp"
 	"k8s.io/client-go/tools/events"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/profile"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/algorithmprovider"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/core"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
@@ -31,10 +35,6 @@ import (
 	"k8s.io/component-base/featuregate"
 	featuregatetesting "k8s.io/component-base/featuregate/testing"
 	_ "k8s.io/kubernetes/pkg/apis/core/install"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/algorithmprovider"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/core"
 )
 
 type testCase struct {

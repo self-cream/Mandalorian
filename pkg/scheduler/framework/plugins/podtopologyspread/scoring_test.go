@@ -20,6 +20,12 @@ import (
 	"context"
 	"testing"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
+	st "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/testing"
 	"github.com/google/go-cmp/cmp"
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
@@ -27,12 +33,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/kubernetes/fake"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
-	st "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/testing"
 	"k8s.io/utils/pointer"
 )
 

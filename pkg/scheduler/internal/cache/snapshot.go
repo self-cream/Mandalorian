@@ -19,9 +19,9 @@ package cache
 import (
 	"fmt"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // Snapshot is a snapshot of cache NodeInfo and NodeTree order. The scheduler takes a

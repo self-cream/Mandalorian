@@ -22,10 +22,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/runtime"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/runtime"
 )
 
 // ErrReasonFake is a fake error message denotes the filter function errored.

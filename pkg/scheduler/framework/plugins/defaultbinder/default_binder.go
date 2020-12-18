@@ -19,11 +19,11 @@ package defaultbinder
 import (
 	"context"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/klog/v2"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // Name of the plugin used in the plugin registry and configurations.

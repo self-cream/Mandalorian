@@ -17,8 +17,8 @@ limitations under the License.
 package fake
 
 import (
-	v1 "k8s.io/api/core/v1"
 	internalcache "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
+	v1 "k8s.io/api/core/v1"
 )
 
 // Cache is used for testing

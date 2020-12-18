@@ -22,11 +22,11 @@ import (
 	"math"
 	"sync/atomic"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/util/sets"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	pluginhelper "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/helper"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 const preScoreStateKey = "PreScore" + Name

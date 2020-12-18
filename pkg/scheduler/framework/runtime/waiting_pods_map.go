@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // waitingPodsMap a thread-safe map used to maintain pods waiting in the permit phase.

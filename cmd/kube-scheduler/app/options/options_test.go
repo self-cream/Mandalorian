@@ -30,13 +30,13 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
 
+	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/interpodaffinity"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	apiserveroptions "k8s.io/apiserver/pkg/server/options"
 	componentbaseconfig "k8s.io/component-base/config"
 	"k8s.io/component-base/logs"
-	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/interpodaffinity"
 )
 
 func TestSchedulerOptions(t *testing.T) {

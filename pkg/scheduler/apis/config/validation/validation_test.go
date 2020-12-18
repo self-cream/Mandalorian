@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	componentbaseconfig "k8s.io/component-base/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 func TestValidateKubeSchedulerConfiguration(t *testing.T) {

@@ -17,12 +17,12 @@ limitations under the License.
 package noderesources
 
 import (
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 	v1 "k8s.io/api/core/v1"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
 	"k8s.io/klog/v2"
 	"k8s.io/kubernetes/pkg/features"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 )
 
 // resourceToWeightMap contains resource name and weight.

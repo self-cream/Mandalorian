@@ -22,10 +22,10 @@ import (
 
 	"k8s.io/klog/v2"
 
-	"k8s.io/api/core/v1"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	internalcache "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
+	"k8s.io/api/core/v1"
 )
 
 // CacheDumper writes some information from the scheduler cache and the scheduling queue to the

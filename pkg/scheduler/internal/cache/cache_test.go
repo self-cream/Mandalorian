@@ -24,6 +24,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -31,8 +33,6 @@ import (
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
 	featuregatetesting "k8s.io/component-base/featuregate/testing"
 	"k8s.io/kubernetes/pkg/features"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	schedutil "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 )
 
 func deepEqualWithoutGeneration(actual *nodeInfoListItem, expected *framework.NodeInfo) error {

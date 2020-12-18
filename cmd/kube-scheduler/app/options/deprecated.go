@@ -19,12 +19,12 @@ package options
 import (
 	"fmt"
 
-	"github.com/spf13/pflag"
-	"k8s.io/apimachinery/pkg/util/validation/field"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/algorithmprovider"
 	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/validation"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/interpodaffinity"
+	"github.com/spf13/pflag"
+	"k8s.io/apimachinery/pkg/util/validation/field"
 )
 
 // DeprecatedOptions contains deprecated options and their flags.

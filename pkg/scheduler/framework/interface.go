@@ -25,12 +25,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/informers"
 	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/events"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 // NodeScoreList declares a list of nodes and their scores.

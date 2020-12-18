@@ -14,7 +14,7 @@ import (
 )
 
 func (m *Mandalorian) Filter(ctx context.Context, state *framework.CycleState, pod *v1.Pod, nodeInfo *framework.NodeInfo) *framework.Status {
-	klog.Infof("Filter Node: %v while Scheduling Pod: %v/%v. ",nodeInfo.Node().GetName(),pod.GetNamespace(),pod.GetName())
+	klog.Infof("Filter Node: %v while Scheduling Pod: %v/%v. ", nodeInfo.Node().GetName(), pod.GetNamespace(), pod.GetName())
 	// TODO: Write Your Filter Policy here.
 	// ..
 
@@ -27,9 +27,9 @@ func (m *Mandalorian) Filter(ctx context.Context, state *framework.CycleState, p
 
 	if pod.GetLabels()[nodecontroller.Affinity] != "" ||
 		pod.GetLabels()[nodecontroller.AntiAffinity] != "" ||
-		pod.GetLabels()[nodecontroller.Exclusion] != ""{
+		pod.GetLabels()[nodecontroller.Exclusion] != "" {
 		if ok, _ := PodCheckAffinityTags(pod, currentScv); !ok {
-			return framework.NewStatus(framework.Unschedulable, "Pod Affinity make" + nodeInfo.Node().Name + "unschedulable")
+			return framework.NewStatus(framework.Unschedulable, "Pod Affinity make"+nodeInfo.Node().Name+"unschedulable")
 		}
 	}
 
@@ -190,7 +190,7 @@ func RemoveParam(sli []scv.Card, n scv.Card) []scv.Card {
 		if sli[i].ID == n.ID {
 			if i == 0 {
 				sli = sli[1:]
-			} else if i == len(sli) - 1 {
+			} else if i == len(sli)-1 {
 				sli = sli[:i]
 			} else {
 				sli = append(sli[:i], sli[i+1:]...)

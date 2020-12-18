@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/queuesort"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/clock"
 	"k8s.io/component-base/metrics/testutil"
 	podutil "k8s.io/kubernetes/pkg/api/v1/pod"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/queuesort"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/util"
 )
 
 const queueMetricMetadata = `

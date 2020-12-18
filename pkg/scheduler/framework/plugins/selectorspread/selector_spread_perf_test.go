@@ -20,14 +20,14 @@ import (
 	"context"
 	"testing"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/client-go/informers"
-	"k8s.io/client-go/kubernetes/fake"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/parallelize"
 	st "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/testing"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/client-go/informers"
+	"k8s.io/client-go/kubernetes/fake"
 )
 
 var (

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // The two thresholds are used as bounds for the image score range. They correspond to a reasonable size range for

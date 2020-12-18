@@ -19,14 +19,14 @@ package podtopologyspread
 import (
 	"fmt"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/validation"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/informers"
 	appslisters "k8s.io/client-go/listers/apps/v1"
 	corelisters "k8s.io/client-go/listers/core/v1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/validation"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 const (

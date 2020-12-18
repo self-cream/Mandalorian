@@ -17,8 +17,8 @@ limitations under the License.
 package cache
 
 import (
-	"k8s.io/api/core/v1"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"k8s.io/api/core/v1"
 )
 
 // Cache collects pods' information and provides node-level aggregated information.

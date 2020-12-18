@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"k8s.io/apimachinery/pkg/runtime"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"k8s.io/apimachinery/pkg/runtime"
 )
 
 func TestDecodeInto(t *testing.T) {

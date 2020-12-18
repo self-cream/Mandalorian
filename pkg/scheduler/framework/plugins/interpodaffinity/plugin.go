@@ -19,10 +19,10 @@ package interpodaffinity
 import (
 	"fmt"
 
-	"k8s.io/apimachinery/pkg/runtime"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/validation"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"k8s.io/apimachinery/pkg/runtime"
 )
 
 const (

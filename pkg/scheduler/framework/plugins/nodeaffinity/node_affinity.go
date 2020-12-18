@@ -20,13 +20,13 @@ import (
 	"context"
 	"fmt"
 
-	v1 "k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/component-helpers/scheduling/corev1/nodeaffinity"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/validation"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	pluginhelper "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/plugins/helper"
+	v1 "k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/component-helpers/scheduling/corev1/nodeaffinity"
 )
 
 // NodeAffinity is a plugin that checks if a pod node selector matches the node label.

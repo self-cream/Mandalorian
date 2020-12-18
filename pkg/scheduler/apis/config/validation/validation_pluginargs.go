@@ -19,12 +19,12 @@ package validation
 import (
 	"fmt"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	v1 "k8s.io/api/core/v1"
 	metav1validation "k8s.io/apimachinery/pkg/apis/meta/v1/validation"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 	"k8s.io/component-helpers/scheduling/corev1/nodeaffinity"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 // ValidateDefaultPreemptionArgs validates that DefaultPreemptionArgs are correct.

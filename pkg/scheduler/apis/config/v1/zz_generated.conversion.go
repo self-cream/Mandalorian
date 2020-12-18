@@ -23,10 +23,10 @@ package v1
 import (
 	unsafe "unsafe"
 
+	config "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	v1 "k8s.io/kube-scheduler/config/v1"
-	config "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 func init() {

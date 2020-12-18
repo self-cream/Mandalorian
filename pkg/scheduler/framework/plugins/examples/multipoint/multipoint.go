@@ -19,9 +19,9 @@ package multipoint
 import (
 	"context"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // CommunicatingPlugin is an example of a plugin that implements two

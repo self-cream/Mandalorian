@@ -25,6 +25,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
 	"github.com/google/go-cmp/cmp"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
@@ -32,9 +35,6 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/metrics"
 )
 
 const (

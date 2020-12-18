@@ -20,12 +20,12 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/google/go-cmp/cmp"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/kube-scheduler/config/v1beta1"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"k8s.io/utils/pointer"
 	"sigs.k8s.io/yaml"
 )

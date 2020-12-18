@@ -20,6 +20,7 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	"github.com/google/go-cmp/cmp"
 	v1 "k8s.io/api/core/v1"
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
@@ -28,7 +29,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/validation/field"
 	componentbasevalidation "k8s.io/component-base/config/validation"
 	v1helper "k8s.io/kubernetes/pkg/apis/core/v1/helper"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 )
 
 // ValidateKubeSchedulerConfiguration ensures validation of the KubeSchedulerConfiguration struct

@@ -20,11 +20,11 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	v1helper "k8s.io/kubernetes/pkg/apis/core/v1/helper"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
 )
 
 // NodePreferAvoidPods is a plugin that priorities nodes according to the node annotation

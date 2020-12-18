@@ -17,12 +17,12 @@ limitations under the License.
 package scheme
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	kubeschedulerconfig "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
 	kubeschedulerconfigv1 "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/v1"
 	kubeschedulerconfigv1beta1 "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config/v1beta1"
+	"k8s.io/apimachinery/pkg/runtime"
+	"k8s.io/apimachinery/pkg/runtime/serializer"
+	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 )
 
 var (

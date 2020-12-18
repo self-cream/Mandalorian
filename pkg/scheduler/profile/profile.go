@@ -21,13 +21,13 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
+	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
+	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
 	"github.com/google/go-cmp/cmp"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/events"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/apis/config"
-	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework"
-	frameworkruntime "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/framework/runtime"
 )
 
 // RecorderFactory builds an EventRecorder for a given scheduler name.

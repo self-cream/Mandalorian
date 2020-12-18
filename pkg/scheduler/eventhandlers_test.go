@@ -21,12 +21,12 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/api/resource"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache"
 	fakecache "github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/cache/fake"
 	"github.com/NJUPT-ISL/Mandalorian/pkg/scheduler/internal/queue"
+	"k8s.io/api/core/v1"
+	"k8s.io/apimachinery/pkg/api/resource"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 func TestSkipPodUpdate(t *testing.T) {
